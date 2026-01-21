@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026학년도 약학대학 1차 합격자 발표</title>
+  <style>
+    :root{
+      --border:#d9d9d9;
+      --border2:#cfcfcf;
+      --label-bg:#f2f2f2;
+      --blue:#1f4e9a;
+      --pass:#0a39ff;
+      --text:#111;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      background:#fff;
+      color:var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                   "Noto Sans KR", "Malgun Gothic", "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    .page{
+      width:min(700px, 92vw);
+      margin:28px auto 40px;
+    }
+
+    /* top brand */
+    .brand{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      margin-top:6px;
+      margin-bottom:18px;
+      color:#444;
+    }
+    .brand .ko{
+      font-weight:700;
+      letter-spacing:-0.5px;
+      font-size:20px;
+    }
+    .brand .en-wrap{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .emblem{
+      width:28px; height:28px;
+      border:2px solid #a88453;
+      border-radius:50%;
+      position:relative;
+    }
+    /* simple “mark” 느낌만 */
+    .emblem:before{
+      content:"";
+      position:absolute;
+      inset:6px 7px;
+      border:2px solid #a88453;
+      border-top-left-radius:8px;
+      border-top-right-radius:8px;
+      border-bottom-left-radius:4px;
+      border-bottom-right-radius:4px;
+      opacity:.9;
+    }
+    .brand .en{
+      line-height:1.05;
+    }
+    .brand .en b{
+      display:block;
+      font-size:18px;
+      letter-spacing:0.2px;
+      color:#333;
+    }
+    .brand .en span{
+      display:block;
+      font-size:10px;
+      letter-spacing:0.6px;
+      color:#666;
+    }
+
+    /* title */
+    h1{
+      text-align:center;
+      font-size:34px;
+      letter-spacing:-0.8px;
+      margin:10px 0 14px;
+      font-weight:800;
+    }
+    .topline{
+      height:3px;
+      background:var(--blue);
+      margin:0 0 0;
+    }
+
+    /* table */
+    table{
+      width:100%;
+      border-collapse:collapse;
+      table-layout:fixed;
+      border-left:1px solid var(--border);
+      border-right:1px solid var(--border);
+      border-bottom:1px solid var(--border);
+    }
+    td{
+      border:1px solid var(--border);
+      vertical-align:middle;
+      padding:0;
+    }
+    .label{
+      width:160px;
+      background:var(--label-bg);
+      text-align:center;
+      font-weight:700;
+      letter-spacing:-0.2px;
+      font-size:18px;
+      padding:10px 8px;
+    }
+    .cell{
+      padding:8px;
+      background:#fff;
+    }
+    .field{
+      border:1px solid var(--border2);
+      height:38px;
+      padding:7px 12px;
+      display:flex;
+      align-items:center;
+      font-size:18px;
+      color:#222;
+      background:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* 수험번호/성명 마스킹 블록 느낌 */
+    .field.masked{}
+    .field.masked .mask{
+      position:absolute;
+      left:10px;
+      top:50%;
+      transform:translateY(-50%);
+      display:grid;
+      grid-template-columns:18px 18px;
+      grid-auto-rows:18px;
+      gap:6px;
+      opacity:.9;
+    }
+    .mask i{
+      display:block;
+      width:18px; height:18px;
+      background:#cfcfcf;
+    }
+    .mask i:nth-child(2){ background:#bfbfbf; }
+    .mask i:nth-child(3){ background:#e0e0e0; }
+    .mask i:nth-child(4){ background:transparent; }
+
+    /* 합격여부 큰 칸 */
+    .field.passbox{
+      height:120px;
+      align-items:flex-start;
+      padding-top:18px;
+    }
+    .pass{
+      color:var(--pass);
+      font-weight:800;
+      font-size:20px;
+    }
+
+    /* 유의사항 큰 칸 */
+    .notesbox{
+      height:420px;
+      display:flex;
+      align-items:flex-end;
+      padding:18px 18px 20px;
+    }
+    .notes{
+      font-size:18px;
+      line-height:1.4;
+      white-space:pre-line;
+    }
+    .notes .bullet{
+      margin-bottom:10px;
+    }
+    .notes .bullet .o{
+      font-weight:800;
+      margin-right:6px;
+    }
+    .notes .star{
+      margin-top:12px;
+    }
+
+    /* row heights (대충 스샷 비율 맞춤) */
+    tr.r1 td{ height:50px; }
+    tr.r2 td{ height:50px; }
+    tr.r3 td{ height:50px; }
+    tr.r4 td{ height:50px; }
+    tr.r5 td{ height:140px; }
+    tr.r6 td{ height:460px; }
+
+    /* print-friendly */
+    @media print{
+      body{ background:#fff; }
+      .page{ width:700px; margin:0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="brand" aria-label="순천대학교 SUNCHON NATIONAL UNIVERSITY">
+      <div class="ko">순천대학교</div>
+      <div class="en-wrap">
+        <div class="emblem" aria-hidden="true"></div>
+        <div class="en">
+          <b>SUNCHON</b>
+          <span>NATIONAL UNIVERSITY</span>
+        </div>
+      </div>
+    </div>
+
+    <h1>2026학년도&nbsp;&nbsp;약학대학 1차 합격자 발표</h1>
+
+    <div class="topline"></div>
+
+    <table role="presentation" aria-label="합격자 발표 표">
+      <tr class="r1">
+        <td class="label">수험번호</td>
+        <td class="cell">
+          <div class="field masked"> 2026-000345
+            <span style="color:#999;">&nbsp;</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="r2">
+        <td class="label">성&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+        <td class="cell">
+          <div class="field masked">
+            임동현
+            <span style="color:#999;">&nbsp;</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="r3">
+        <td class="label">모집단위</td>
+        <td class="cell">
+          <div class="field">약학과</div>
+        </td>
+      </tr>
+
+      <tr class="r4">
+        <td class="label">전형구분</td>
+        <td class="cell">
+          <div class="field">일반편입학</div>
+        </td>
+      </tr>
+
+      <tr class="r5">
+        <td class="label">합격여부</td>
+        <td class="cell">
+          <div class="field passbox">
+            <span class="pass">1차 합격</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="r6">
+        <td class="label">유의사항</td>
+        <td class="cell">
+          <div class="field notesbox">
+            <div class="notes">
+              <div class="bullet"><span class="o">○</span>면접 일자
+- 26.1.29.(목) 11:20</div>
+              <div class="bullet"><span class="o">○</span>면접 장소
+- 57922 전라남도 순천시 중앙로 255(석현동) 순천대학교 약학대학 A1. A2. 건물 1층 302호 강의실</div>
+              <div class="star">※ 합격자가 면접기간 내에 불참 할 경우 입학할
+   의사가 없는 것으로 간주함</div>
+              <div class="star">※ 면접 순번과 시간표는 편입학 전형 공지사항을 참고</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
+    
+  </body>
+  
+</html>
